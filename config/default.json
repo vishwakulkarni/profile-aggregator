@@ -1,0 +1,9 @@
+{
+  "mongoURI": "your mongoURI",
+  "jwtSecret": "my ls JWT secret",
+  "githubClientId": "your github client ID",
+  "githubSecret": "your github secret",
+  "cloud_name": "vishwakulkarni",
+  "api_key": "511431557879455",
+  "api_secret": "lJpmLc3oJnCCZvamt3NOdCSEVIE"
+}
