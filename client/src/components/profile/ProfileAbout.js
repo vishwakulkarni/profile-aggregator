@@ -6,6 +6,7 @@ const ProfileAbout = ({
   profile: {
     bio,
     skills,
+    social,
     user: { name }
   },
   edit
@@ -38,6 +39,7 @@ const ProfileAbout = ({
         ))}
 
       </div>
+      <div className=''></div>
     </div>
   );
 
