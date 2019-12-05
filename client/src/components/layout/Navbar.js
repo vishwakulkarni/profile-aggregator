@@ -20,15 +20,6 @@ const Navbar = ({
           </span>
         </Link>
       </li>
-      {/* <li>
-        <Link to='/posts-auth'>
-          <i className='fas fa-comment' />
-          <span className='hide-sm'>
-            {''}
-            Posts
-          </span>
-        </Link>
-      </li> */}
       <li>
         {user && isAuthenticated && loading === false && (
           /* <Link to={`/profile/${user._id}`}> */
@@ -70,15 +61,6 @@ const Navbar = ({
           </span>
         </Link>
       </li>
-      {/* <li>
-        <Link to='/posts'>
-          <i className='fas fa-comment' />
-          <span className='hide-sm'>
-            {''}
-            Posts
-          </span>
-        </Link>
-      </li> */}
       <li>
         <Link class="square_btn" to='/register'>
           {''}
