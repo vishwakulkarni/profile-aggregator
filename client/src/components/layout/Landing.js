@@ -14,7 +14,7 @@ const Landing = ({ auth: { isAuthenticated, loading, user } }) =>
       <div className='dark-overlay'>
         <div className='landing-inner'>
           <h1 className='large'>Profile-Aggregrator</h1>
-          <p className='lead'>Cal Bears share and connect</p>
+          <p className='lead'>Lets share and connect</p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
               Sign Up
