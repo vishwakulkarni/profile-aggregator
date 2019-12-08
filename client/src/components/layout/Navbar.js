@@ -69,7 +69,7 @@ const Navbar = ({
         </Link>
       </li>
       <li>
-        <Link to='/login'>
+        <Link class="square_btn" to='/login'>
           {''}
           <i className='fas fa-sign-in-alt' />
           <span className='hide-sm'>Login</span>
