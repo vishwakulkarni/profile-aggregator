@@ -22,7 +22,6 @@ app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
 
 //Serve static assets in production
-
 if (process.env.NODE_ENV === 'production') {
   //Set static folder
   app.use(express.static('client/build'));
@@ -31,34 +30,12 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-// UPDATE ALL DOCUMENTS IN DATABASE BY ADDING SOME FIELDS
-// Callback function, numAffected  is number of affected documents and other info
-
 const cb = function (err, numAffected) {
   if (err) {
     console.error(err.message);
   }
   console.log('num=', numAffected);
 };
-
-// User.update(
-//   { name: "Keith Wong" }, // conditions
-//   { $set: { background: "" } }, // update
-//   { multi: true },  // options
-//   cb // callback
-// );
-
-
-
-//User.update({}, { $set: { picture: "", background: "" } }, { multi: true }, cb);
-
-// Profile.update(
-//   {}, // no conditions
-//   { $set: { images: { picture: "", cover: "" } } },
-//   { multi: true },
-//   cb
-// );
-//==============================================
 
 const PORT = process.env.PORT || 5000;
 
