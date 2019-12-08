@@ -58,7 +58,7 @@ router.post(
       status,
       githubusername,
       skills,
-      youtube,
+      leetcode,
       facebook,
       twitter,
       instagram,
@@ -81,7 +81,7 @@ router.post(
 
     // Build social object
     profileFields.social = {};
-    if (youtube) profileFields.social.youtube = youtube;
+    if (leetcode) profileFields.social.leetcode = leetcode;
     if (twitter) profileFields.social.twitter = twitter;
     if (facebook) profileFields.social.facebook = facebook;
     if (linkedin) profileFields.social.linkedin = linkedin;

@@ -16,7 +16,7 @@ const CreateProfile = ({ createProfile, history }) => {
     twitter: '',
     facebook: '',
     linkedin: '',
-    youtube: '',
+    leetcode: '',
     instagram: ''
   });
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
@@ -31,7 +31,7 @@ const CreateProfile = ({ createProfile, history }) => {
     twitter,
     facebook,
     linkedin,
-    youtube,
+    leetcode,
     instagram
   } = formData;
   const onChange = e =>
@@ -165,12 +165,12 @@ const CreateProfile = ({ createProfile, history }) => {
             </div>
 
             <div className='form-group social-input'>
-              <i className='fab fa-youtube fa-2x' />
+              <i className='fab fa-code fa-2x' />
               <input
                 type='text'
-                placeholder='YouTube URL'
-                name='youtube'
-                value={youtube}
+                placeholder='Leetcode URL'
+                name='leetcode'
+                value={leetcode}
                 onChange={e => onChange(e)}
               />
             </div>
