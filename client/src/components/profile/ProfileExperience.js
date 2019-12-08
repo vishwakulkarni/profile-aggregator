@@ -5,6 +5,7 @@ import moment from 'moment';
 import { Link, withRouter } from 'react-router-dom';
 import { deleteExperience } from '../../actions/profile';
 import { connect } from 'react-redux';
+import copy from "copy-to-clipboard";
 
 const ProfileExperience = ({
   experience: { company, title, location, current, to, from, description, _id },
@@ -32,6 +33,15 @@ const ProfileExperience = ({
             >
               <i className='fas fa-edit' />
             </Link>
+            <button
+            title='Copy text'
+            onClick={() =>{copy(company);
+                   }}
+            className='btn-del rightside'
+            >
+              {}
+              <i class="fas fa-copy"></i>
+            </button>
           </Fragment>
         )}
       </h3>

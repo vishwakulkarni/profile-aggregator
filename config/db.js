@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const config = require('config');
  mongoURI = config.get('mongoURI');
-mongoURI = "mongodb://admin:admin@localhost:27017/temp"
+mongoURI = "mongodb://@localhost:27017/temp"
 console.log(mongoURI);
 const connectDB = async () => {
   try {
