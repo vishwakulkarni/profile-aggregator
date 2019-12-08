@@ -77,13 +77,13 @@ const ProfileTop = ({
                 <i className='fab fa-linkedin fa-2x' />
               </a>
             )}
-            {social && social.youtube && (
+            {social && social.leetcode && (
               <a
-                href={social.youtube}
+                href={social.leetcode}
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <i className='fab fa-youtube fa-2x' />
+                <i className='fab fa-code fa-2x' />
               </a>
             )}
             {social && social.instagram && (

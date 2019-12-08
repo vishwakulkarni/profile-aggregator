@@ -31,18 +31,6 @@ const ProfileAbout = ({
         </Fragment>
       )}
       <h2 className='text-primary'>Social Network Profiles</h2>
-      {/*
-      <div className='skills'>
-        {skills.map((skill, index) => (
-          <Fragment>
-            <div key={index} className='p-1'>
-              <i className='fas fa-check' /> {skill}
-            </div>
-            <br />
-          </Fragment>
-        ))}
-      </div>
-      */}
       <div className='profiles'>
         <button
           title='Copy Github'
@@ -69,6 +57,18 @@ const ProfileAbout = ({
           <h4>LinkedIn Profile: <a href={social.linkedin}> {social.linkedin}</a></h4>
         </div>
         <button
+          title='Copy Leetcode'
+          onClick={() =>{copy(social.leetcode);
+                  }}
+          className='btn-del rightside'
+        >
+          {}
+          <i class="fas fa-copy"></i>
+        </button>
+        <div class="myprofileleetcode text-left">
+          <h4>Leetcode Profile: <a href={social.leetcode}> {social.leetcode}</a></h4>
+        </div>
+        <button
           title='Copy Twitter'
           onClick={() =>{copy(social.twitter);
                   }}
@@ -91,18 +91,6 @@ const ProfileAbout = ({
         </button>
         <div class="myprofileinstagram text-left">
           <h4>Instagram Profile: <a href={social.instagram}> {social.instagram}</a></h4>
-        </div>
-        <button
-          title='Copy Youtube'
-          onClick={() =>{copy(social.youtube);
-                  }}
-          className='btn-del rightside'
-        >
-          {}
-          <i class="fas fa-copy"></i>
-        </button>
-        <div class="myprofileyoutube text-left">
-          <h4>Youtube Profile: <a href={social.youtube}> {social.youtube}</a></h4>
         </div>
       </div>
       <div className=''></div>

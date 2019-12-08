@@ -24,7 +24,7 @@ const EditProfile = ({
     twitter: '',
     facebook: '',
     linkedin: '',
-    youtube: '',
+    leetcode: '',
     instagram: ''
   });
 
@@ -45,7 +45,7 @@ const EditProfile = ({
       twitter: loading || !profile.social ? '' : profile.social.twitter,
       facebook: loading || !profile.social ? '' : profile.social.facebook,
       linkedin: loading || !profile.social ? '' : profile.social.linkedin,
-      youtube: loading || !profile.social ? '' : profile.social.youtube,
+      leetcode: loading || !profile.social ? '' : profile.social.leetcode,
       instagram: loading || !profile.social ? '' : profile.social.instagram
     });
   }, [loading, getCurrentProfile]);
@@ -61,7 +61,7 @@ const EditProfile = ({
     twitter,
     facebook,
     linkedin,
-    youtube,
+    leetcode,
     instagram
   } = formData;
 
@@ -203,12 +203,12 @@ const EditProfile = ({
             </div>
 
             <div className='form-group social-input'>
-              <i className='fab fa-youtube fa-2x' />
+              <i className='fab fa-code fa-2x' />
               <input
                 type='text'
-                placeholder='YouTube URL'
-                name='youtube'
-                value={youtube}
+                placeholder='Leetcode URL'
+                name='leetcode'
+                value={leetcode}
                 onChange={e => onChange(e)}
               />
             </div>

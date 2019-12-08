@@ -111,7 +111,7 @@ const ProfileSchema = new mongoose.Schema({
     }
   ],
   social: {
-    youtube: {
+    leetcode: {
       type: String
     },
     twitter: {
