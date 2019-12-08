@@ -18,10 +18,10 @@ const AddCourse = ({ addCourse, history }) => {
   return (
     <Fragment>
       {' '}
-      <h1 className='large text-primary'>Add A Course</h1>{' '}
+      <h1 className='large text-primary'>Add A Project</h1>{' '}
       <p className='lead'>
         {' '}
-        <i className='fas fa-code-branch' /> Add any course you have taken.{' '}
+        <i className='fas fa-code-branch' /> Add any Project you have done.{' '}
       </p>{' '}
       <small>*=required field</small>{' '}
       <form
