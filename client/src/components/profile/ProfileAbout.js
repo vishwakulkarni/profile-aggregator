@@ -30,6 +30,8 @@ const ProfileAbout = ({
           <div className='line' />
         </Fragment>
       )}
+      {social && (
+        <Fragment>
       <h2 className='text-primary'>Social Network Profiles</h2>
       <div className='profiles'>
         <button
@@ -94,6 +96,7 @@ const ProfileAbout = ({
         </div>
       </div>
       <div className=''></div>
+      </Fragment>)}
     </div>
   );
 

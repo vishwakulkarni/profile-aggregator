@@ -38,7 +38,7 @@ const AddCourse = ({ addCourse, history }) => {
             name='title'
             cols='30'
             rows='5'
-            placeholder='Course'
+            placeholder='project'
             value={title}
             onChange={e => onChange(e)}
           />{' '}
