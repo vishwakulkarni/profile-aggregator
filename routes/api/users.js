@@ -7,6 +7,9 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
 
+
+//user registration and handling file
+
 //@route POST api/users
 //@desc Test route
 //@access public

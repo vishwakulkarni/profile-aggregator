@@ -8,6 +8,9 @@ const { check, validationResult } = require('express-validator/check');
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
 
+//This is a profile file which handles all users database call. Including GET,DELETE and POST.
+//This class is responsible for our database class diagram
+//Mail class for database call handling
 
 //@route GET api/profile/m
 //@desc Get curr users profile

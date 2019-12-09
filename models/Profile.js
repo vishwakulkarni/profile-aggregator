@@ -1,4 +1,7 @@
 const mongoose = require('mongoose');
+
+//JSON file template used to store users profile and their details
+
 const ProfileSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,

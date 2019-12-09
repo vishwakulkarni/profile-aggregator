@@ -1,6 +1,8 @@
 const jwt = require('jsonwebtoken');
 const config = require('config');
 
+//file used to check for users auth token
+
 module.exports = function(req, res, next) {
   //Get token from header
   const token = req.header('x-auth-token');

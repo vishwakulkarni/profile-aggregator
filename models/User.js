@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+//JSON file template used to store users registration details
+
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,

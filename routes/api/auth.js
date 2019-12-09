@@ -7,6 +7,8 @@ const { check, validationResult } = require('express-validator/check');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
+//This is a authentication file which helps in authenticating user and handle users pre routes
+
 //@route GET api/auth
 //@desc Test route
 //@access public
