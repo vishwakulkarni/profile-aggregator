@@ -16,7 +16,7 @@ const User = require('../../models/User');
 //@desc Get curr users profile
 //@access private
 
-router.get('/me', auth, async (req, res) => {
+router.get('/meta', auth, async (req, res) => {
   try {
     const profile = await Profile.findOne({ user: req.user.id }).populate(
       'user',
@@ -24,12 +24,12 @@ router.get('/me', auth, async (req, res) => {
     );
 
     if (!profile) {
-      res.status(400).json({ msg: 'There is no profile for this user' });
+      res.status(600).json({ msg: 'There is no profile for this user' });
     }
     return res.json(profile);
   } catch (err) {
     console.error(err.message);
-    res.status(500).send('Server error');
+    res.status(540).send('Server error');
   }
 });
 
@@ -58,7 +58,7 @@ router.post(
       website,
       location,
       bio,
-      status,
+      status
       githubusername,
       skills,
       leetcode,
